@@ -3,14 +3,17 @@
 <!--  If necessary, please modify the charset parameter to specify the        -->
 <!--  character set of your HTML page.                                        -->
 <!--  ----------------------------------------------------------------------  -->
+
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 <script src="https://www.google.com/recaptcha/api.js"></script>
 <script>
  function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
 </script>
+
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <!--  ----------------------------------------------------------------------  -->
+
 <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
 <input type=hidden name='captcha_settings' value='{"keyname":"Romark","fallback":"true","orgId":"00Df4000002a6QS","ts":""}'>
@@ -27,13 +30,21 @@
 <!--  ----------------------------------------------------------------------  -->
 
 <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+
 <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+
 <label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+
 <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="city">City</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
+
 <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
 <label for="mobile">Mobile</label><input  id="mobile" maxlength="40" name="mobile" size="20" type="text" /><br>
 
-Warehouse Site:<select  id="00Nf400000NrTFr" name="00Nf400000NrTFr" title="Warehouse Site"><option value="">--None--</option>
+Warehouse Site:<select  id="00Nf400000NrTFr" name="00Nf400000NrTFr" title="Warehouse Site">
+<option value="">--None--</option>
 <option value="CA">CA</option>
 <option value="GA">GA</option>
 <option value="NJ">NJ</option>
@@ -41,11 +52,15 @@ Warehouse Site:<select  id="00Nf400000NrTFr" name="00Nf400000NrTFr" title="Wareh
 <option value="TX">TX</option>
 </select><br>
 
+Distribution &amp; Fulfillment:<input  id="00Nf400000NrTUN" name="00Nf400000NrTUN" type="checkbox" value="1" /><br>
+
 Packaging &amp; Value-Added Services:<input  id="00Nf400000NrTUS" name="00Nf400000NrTUS" type="checkbox" value="1" /><br>
 
 Transportation Management:<input  id="00Nf400000NrTUX" name="00Nf400000NrTUX" type="checkbox" value="1" /><br>
 
 Real Estate:<input  id="00Nf400000NrTUc" name="00Nf400000NrTUc" type="checkbox" value="1" /><br>
+
+<label for="description">Description</label><textarea name="description"></textarea><br>
 
 <div class="g-recaptcha" data-sitekey="6LeaAMEUAAAAAFbYNCjzKNcMTP615R_a4iLwqGg9"></div><br>
 <input type="submit" name="submit">
