@@ -1,67 +1,50 @@
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-<!--  If necessary, please modify the charset parameter to specify the        -->
-<!--  character set of your HTML page.                                        -->
-<!--  ----------------------------------------------------------------------  -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
 
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-<script src="https://www.google.com/recaptcha/api.js"></script>
-<script>
- function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
-</script>
+<title>Brent Mac</title>
+<meta name="description" content="Brent Mac - Personal Website">
+  <meta name="author" content="BMac">
+  <!-- link <rel="stylesheet" href="css/styles.css?v=1.0"> -->
+  <link rel="stylesheet" href="footer-social-icons.css">
+</head>
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <FORM> element to your page.             -->
-<!--  ----------------------------------------------------------------------  -->
+<div align="center">
+  <img src="images/PanaLODO.jpg" alt="LODO Denver Skyline"
+      style="width:1400px;height:200px;">
+  </div>
+</br>
+</br>
+<div align="right">
+  <img src="images/CropAvi.png" alt="LODO Denver Skyline"
+      style="width:200px;height:200px;">
+  </div>
 
-<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+<div align ="left">
+<font face="Trebuchet MS">
+<h1 style="color:#FFFFFF; font-weight: normal;">Brent Mac</h1>
 
-<input type=hidden name='captcha_settings' value='{"keyname":"Romark","fallback":"true","orgId":"00Df4000002a6QS","ts":""}'>
-<input type=hidden name="oid" value="00Df4000002a6QS">
-<input type=hidden name="retURL" value="https://www.romarklogistics.com/">
-<input id="lead_source" name="lead_source" type="hidden" value="Website" />
+<body style="background-color:#2E4053; font-weight: normal;">
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-<!--  these lines if you wish to test in debug mode.                          -->
-<!--  <input type="hidden" name="debug" value=1>                              -->
-<!--  <input type="hidden" name="debugEmail"                                  -->
-<!--  value="brent.mac@neuraflash.com">                                       -->
-<!--  ----------------------------------------------------------------------  -->
+  <p style="color:#FFFFFF;"> Welcome to my website! Nothing fancy here. I wanted to get started with basic web design - figured a personal website would be a good way to start. Feel free to look around and connect!</p>
+</font>
+</div>
 
-<label for="first_name">First Name </label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+<div class="footer-left">
+<img src="images/BMacFooterLogo.png" alt="BMac Logo GW" style="width:140px;height:48px;">
+    </div>
 
-<label for="last_name">Last Name </label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+<footer class="footer-social-icons">
+      <ul class="social-icons">
+          <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/_brent_mac?lang=en" class="social-icon" target="_blank"> <i class="fa fa-twitter"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+      </ul>
 
-<label for="company">Company </label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+</footer>
 
-<label for="email">Email </label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
 
-<label for="phone">Phone </label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
-
-<label for="mobile">Mobile </label><input  id="mobile" maxlength="40" name="mobile" size="20" type="text" /><br>
-
-Warehouse Site: <select  id="00Nf400000NrTFr" name="00Nf400000NrTFr" title="Warehouse Site">
-<option value="">--None--</option>
-<option value="CA">CA</option>
-<option value="GA">GA</option>
-<option value="NJ">NJ</option>
-<option value="PA">PA</option>
-<option value="TX">TX</option>
-</select><br>
-
-Distribution &amp; Fulfillment:<input  id="00Nf400000NrTUN" name="00Nf400000NrTUN" type="checkbox" value="1" /><br>
-
-Packaging &amp; Value-Added Services:<input  id="00Nf400000NrTUS" name="00Nf400000NrTUS" type="checkbox" value="1" /><br>
-
-Transportation Management:<input  id="00Nf400000NrTUX" name="00Nf400000NrTUX" type="checkbox" value="1" /><br>
-
-Real Estate:<input  id="00Nf400000NrTUc" name="00Nf400000NrTUc" type="checkbox" value="1" /><br>
-
-<label for="description">Comments</label><br>
- <textarea name="description"></textarea><br>
-
-<div class="g-recaptcha" data-sitekey="6LeaAMEUAAAAAFbYNCjzKNcMTP615R_a4iLwqGg9"></div><br>
-<input type="submit" name="submit">
-
-</form>
+</html>
