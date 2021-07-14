@@ -1,6 +1,10 @@
 a {
 color: DeepSkyBlue; font-size: 120%;}
 
+body {background-color:#2E4053;
+}
+
+
 card {
   color: AliceBlue;
   /* Add shadows to create the "card" effect */
