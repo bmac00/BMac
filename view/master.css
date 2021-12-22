@@ -6,6 +6,10 @@ body {background-color:#2E4053;
       align="center"
 }
 
+.topnav {
+      text-align: center;
+}
+
 .card {
   color: AliceBlue;
   /* Add shadows to create the "card" effect */
