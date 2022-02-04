@@ -18,7 +18,7 @@ body {background-color:#2E4053;
 }
 
 .card {
-  align="center";
+  align=center;
   color: AliceBlue;
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -39,6 +39,6 @@ body {background-color:#2E4053;
 /* Add some padding inside the card container */
 .container {
   padding: 2px 16px;
-  align="center";
+  align= center;
   
 }
