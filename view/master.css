@@ -43,6 +43,10 @@ body {background-color:#2E4053;
   
 }
 
+embed {
+  width: 100%;
+}
+
 /*
 .cameraBanner {
       height: 150px;
