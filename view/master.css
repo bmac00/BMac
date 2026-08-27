@@ -58,3 +58,24 @@ embed {
       height: 150px;
       width: auto
 } */ 
+/* Added 8/27 to address resume mobile iframe responsiveness for resume*/
+.resume-viewer {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.resume-viewer iframe {
+  display: block;
+  width: 100%;
+  height: 85vh;
+  min-height: 600px;
+  border: none;
+}
+
+@media (max-width: 600px) {
+  .resume-viewer iframe {
+    height: 75vh;
+    min-height: 500px;
+  }
+}
