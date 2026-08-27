@@ -1,103 +1,264 @@
 <!DOCTYPE html>
-<html
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" href="/images/LogoVar1Small.png">
-<title>Brent Mac</title>
-<meta name="description" content="Brent Mac - Personal Website">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brent Mac - Personal Website">
   <meta name="author" content="BMac">
-  <link rel="stylesheet" href="view/footer-social-icons.css"/>
-    <link rel="stylesheet" href="view/master.css"/>
+
+  <title>Brent Mac</title>
+
+  <link rel="icon" href="/images/LogoVar1Small.png">
+  <link rel="stylesheet" href="view/footer-social-icons.css">
+  <link rel="stylesheet" href="view/master.css">
+
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 30px;
+      font-family: "Trebuchet MS", sans-serif;
+      font-weight: normal;
+    }
+
+    .card {
+      padding: 20px;
+      color: #666;
+      background-color: #dee6ed;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+                  0 6px 20px rgba(0, 0, 0, 0.19);
+      transition: box-shadow 0.3s;
+      border-radius: 10px;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+      padding: 2px 16px;
+    }
+
+    .intro {
+      text-align: center;
+      color: #fff;
+    }
+
+    .intro h1 {
+      font-weight: normal;
+    }
+
+    .resume-link {
+      margin: 28px 0 20px;
+      text-align: center;
+    }
+
+    .resume-link a {
+      display: inline-block;
+      padding: 10px 20px;
+      color: #fff;
+      background-color: #333;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .resume-link a:hover,
+    .resume-link a:focus-visible {
+      background-color: #222;
+    }
+
+    /* PDF.js renders the real PDF into these responsive canvases. */
+    .resume-viewer {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .resume-page {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0 auto 20px;
+      background: #fff;
+      box-shadow: 0 3px 14px rgba(0, 0, 0, 0.35);
+    }
+
+    .resume-status {
+      padding: 24px 12px;
+      color: #fff;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        margin: 12px;
+      }
+
+      .card {
+        padding: 16px;
+      }
+
+      .resume-link a {
+        width: 100%;
+        max-width: 340px;
+      }
+    }
+  </style>
 </head>
 
-<div class="card">
-<style>
-.card {
-  padding: 20px 20px 20px 20px;
-  color: #666666;
-  background-color: #dee6ed;
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: 0.3s;
-  border-radius: 10px;
+<body class="body">
+  <header class="card">
+    <div class="profileContainerImage">
+      <img
+        src="images/CasualAvi2022.png"
+        alt="Brent Mac"
+        width="150"
+        height="150">
 
-}
-
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-/* Add some padding inside the card container */
-.container {
-  padding: 2px 16px;
-}
-</style>
-  <div class = "profileContainerImage">
-  <img src="images/CasualAvi2022.png" alt="CheesinCropCircle"
-      style="width:150px;height:150px;">
-     <div class="container">
-       <h3> <font face="Trebuchet MS"> brent-mac.com  </font> </h3>
-       </div>
-  </div> </div>
-
-</br>
-<nav align="center">
-  <font face="Trebuchet MS">
-<a href="/index">About Me</a> &emsp;|&emsp;
-<!-- <a href="/data">Do more with Data</a> &emsp;|&emsp;   -->
-<a href="/photos">Photography</a>
-    </font>
-</nav>
-<hr size="2" noshade>
-<body style= "font-weight: normal; margin: 30px;" class="body">
-<div> <!-- align ="center"> -->
-<font face="Trebuchet MS">
-<h1 style="color:#FFFFFF; font-weight: normal;">Brent Mac</h1>
-
-  <p style="color:#FFFFFF;"> Welcome to my website! Nothing fancy here. I wanted to get started with basic web design - figured a personal website would be a good way to start. Feel free to look around and connect!</p>
-</br>
-</font>
-</div>
-
-  <!-- <div align="center"> -->
-<!-- Mobile-friendly fallback button -->
-<div style="text-align: center; margin-bottom: 20px;">
-  <a href="media/Resume_BrentMac_August2026.pdf" target="_blank" style="padding: 10px 20px; background-color: #333; color: #fff; text-decoration: none; border-radius: 5px; font-family: 'Trebuchet MS', sans-serif;">
-    📄 Open Resume Full Screen
-  </a>
-</div>
-
-<!-- Responsive Resume Viewer -->
-<div class="resume-container">
-  <img
-    src="media/Resume_BrentMac_August2026-page-1.png"
-    alt="Brent Mac resume, page 1"
-    class="resume-page">
-</div>
-         <!-- 
-        <embed src="/media/Resume.pdf" width="800" height="500" type='application/pdf'> </iframe>
-       <iframe src="/media/Resume.pdf" width="70%" height="500px"> </iframe> 
-        -->
-  </div>
-<br>
-  <br>
-<div class="footer-left">
-<img src="images/BMacFooterLogo.png" alt="BMac Logo GW" style="width:50px;height:50px;">
+      <div class="container">
+        <h3>brent-mac.com</h3>
+      </div>
     </div>
-  </body>
+  </header>
 
-<footer class="footer-social-icons">
-      <ul class="social-icons">
-          <li><a href="https://twitter.com/_brent_mac?lang=en" class="social-icon" target="_blank"> <i class="fa fa-twitter"></i></a></li>
-          <li><a href="https://www.youtube.com/" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/brentmac/" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
-          <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
-      </ul>
+  <nav aria-label="Main navigation" style="text-align: center; margin-top: 28px;">
+    <a href="/index">About Me</a>
+    &emsp;|&emsp;
+    <a href="/photos">Photography</a>
+  </nav>
 
-</footer>
+  <hr size="2" noshade>
 
+  <main>
+    <section class="intro">
+      <h1>Brent Mac</h1>
+      <p>
+        Welcome to my website! Nothing fancy here. I wanted to get started with
+        basic web design - figured a personal website would be a good way to
+        start. Feel free to look around and connect!
+      </p>
+    </section>
 
+    <div class="resume-link">
+      <a
+        href="media/Resume_BrentMac_August2026.pdf"
+        target="_blank"
+        rel="noopener">
+        &#128196; Open Resume Full Screen
+      </a>
+    </div>
+
+    <section
+      id="resume-viewer"
+      class="resume-viewer"
+      aria-label="Brent Mac resume">
+      <p id="resume-status" class="resume-status">Loading resume&hellip;</p>
+    </section>
+  </main>
+
+  <div class="footer-left">
+    <img
+      src="images/BMacFooterLogo.png"
+      alt="BMac logo"
+      width="50"
+      height="50">
+  </div>
+
+  <footer class="footer-social-icons">
+    <ul class="social-icons">
+      <li>
+        <a
+          href="https://twitter.com/_brent_mac?lang=en"
+          class="social-icon"
+          target="_blank"
+          rel="noopener"
+          aria-label="Brent Mac on Twitter">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.youtube.com/"
+          class="social-icon"
+          aria-label="YouTube">
+          <i class="fa fa-youtube" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.linkedin.com/in/brentmac/"
+          class="social-icon"
+          target="_blank"
+          rel="noopener"
+          aria-label="Brent Mac on LinkedIn">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+  <script type="module">
+    import * as pdfjsLib from
+      "https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/build/pdf.min.mjs";
+
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+      "https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/build/pdf.worker.min.mjs";
+
+    const pdfUrl = "media/Resume_BrentMac_August2026.pdf";
+    const viewer = document.getElementById("resume-viewer");
+    const status = document.getElementById("resume-status");
+    let pdfDocument;
+    let renderTimer;
+
+    async function renderResume() {
+      if (!pdfDocument) {
+        return;
+      }
+
+      viewer.querySelectorAll("canvas").forEach((canvas) => canvas.remove());
+
+      const availableWidth = viewer.clientWidth;
+      const pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
+
+      const page = await pdfDocument.getPage(1);
+      const originalViewport = page.getViewport({ scale: 1 });
+      const cssScale = availableWidth / originalViewport.width;
+      const renderViewport = page.getViewport({ scale: cssScale * pixelRatio });
+
+      const canvas = document.createElement("canvas");
+      canvas.className = "resume-page";
+      canvas.setAttribute("aria-label", "Resume page 1");
+      canvas.width = Math.floor(renderViewport.width);
+      canvas.height = Math.floor(renderViewport.height);
+      canvas.style.width = `${Math.floor(renderViewport.width / pixelRatio)}px`;
+      canvas.style.height = `${Math.floor(renderViewport.height / pixelRatio)}px`;
+      viewer.appendChild(canvas);
+
+      await page.render({
+        canvasContext: canvas.getContext("2d"),
+        viewport: renderViewport
+      }).promise;
+    }
+
+    try {
+      pdfDocument = await pdfjsLib.getDocument(pdfUrl).promise;
+      status.remove();
+      await renderResume();
+    } catch (error) {
+      console.error("Unable to display resume:", error);
+      status.innerHTML =
+        'The resume preview could not load. ' +
+        '<a href="media/Resume_BrentMac_August2026.pdf" target="_blank" rel="noopener">Open the PDF directly</a>.';
+    }
+
+    window.addEventListener("resize", () => {
+      window.clearTimeout(renderTimer);
+      renderTimer = window.setTimeout(renderResume, 200);
+    });
+  </script>
+</body>
 </html>
-<!-- * -->
