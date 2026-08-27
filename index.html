@@ -63,14 +63,50 @@
 
   <!-- <div align="center"> -->
 <!-- Mobile-friendly fallback button -->
-<div style="text-align: center; margin-bottom: 20px;">
-  <a href="media/Resume_BrentMac_August2026.pdf" target="_blank" style="padding: 10px 20px; background-color: #333; color: #fff; text-decoration: none; border-radius: 5px; font-family: 'Trebuchet MS', sans-serif;">
-    📄 Open Resume Full Screen
+<style>
+  /* Base styles for the button */
+  .resume-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+  }
+
+  /* Default desktop view: show viewer, show button */
+  .desktop-pdf-container {
+    display: block;
+  }
+
+  /* Mobile screen optimization (phones/small screens) */
+  @media screen and (max-width: 768px) {
+    /* Hide the buggy PDF iframe on mobile */
+    .desktop-pdf-container {
+      display: none;
+    }
+    /* Make button prominent on mobile */
+    .resume-btn {
+      display: block;
+      width: 80%;
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 16px;
+    }
+  }
+</style>
+
+<!-- Action Button (Primary action on Mobile, secondary on Desktop) -->
+<div style="text-align: center; margin: 20px 0;">
+  <a class="resume-btn" href="media/Resume_BrentMac_August2026.pdf" target="_blank">
+    📄 View / Download Resume (PDF)
   </a>
 </div>
 
-<!-- Responsive Desktop Viewer -->
-<div align="center">
+<!-- Desktop Viewer (Hidden on Mobile) -->
+<div class="desktop-pdf-container" align="center">
   <iframe src="media/Resume_BrentMac_August2026.pdf" style="width: 100%; max-width: 900px; height: 80vh; border: none;">
       <p>Your browser does not support PDFs. <a href="media/Resume_BrentMac_August2026.pdf">Download the resume here</a>.</p>
   </iframe>
