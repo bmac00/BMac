@@ -93,6 +93,35 @@
       text-align: center;
     }
 
+    /* Keep the footer below the full-height resume on desktop. */
+    .site-footer.footer-social-icons {
+      position: static !important;
+      clear: both;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      width: 100%;
+      margin: 32px 0 0;
+      padding: 0;
+    }
+
+    .site-footer .footer-left {
+      position: static !important;
+      float: none !important;
+      grid-column: 1;
+      justify-self: start;
+      margin: 0;
+    }
+
+    .site-footer .social-icons {
+      position: static !important;
+      float: none !important;
+      grid-column: 2;
+      justify-self: center;
+      margin: 0;
+      padding: 0;
+    }
+
     @media (max-width: 600px) {
       body {
         margin: 12px;
@@ -105,6 +134,10 @@
       .resume-link a {
         width: 100%;
         max-width: 340px;
+      }
+
+      .site-footer.footer-social-icons {
+        margin-top: 24px;
       }
     }
   </style>
@@ -160,15 +193,15 @@
     </section>
   </main>
 
-  <div class="footer-left">
-    <img
-      src="images/BMacFooterLogo.png"
-      alt="BMac logo"
-      width="50"
-      height="50">
-  </div>
+  <footer class="site-footer footer-social-icons">
+    <div class="footer-left">
+      <img
+        src="images/BMacFooterLogo.png"
+        alt="BMac logo"
+        width="50"
+        height="50">
+    </div>
 
-  <footer class="footer-social-icons">
     <ul class="social-icons">
       <li>
         <a
@@ -200,7 +233,7 @@
       </li>
     </ul>
   </footer>
-
+<!-- Start JS for device responsive Resume viewing (desktop and mobile) -->
   <script type="module">
     import * as pdfjsLib from
       "https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/build/pdf.min.mjs";
