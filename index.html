@@ -1,130 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="/images/LogoVar1Small.png">
 <title>Brent Mac</title>
 <meta name="description" content="Brent Mac - Personal Website">
-<meta name="author" content="BMac">
-<link rel="stylesheet" href="view/footer-social-icons.css"/>
-<link rel="stylesheet" href="view/master.css"/>
+  <meta name="author" content="BMac">
+  <link rel="stylesheet" href="view/footer-social-icons.css"/>
+    <link rel="stylesheet" href="view/master.css"/>
+</head>
 
+<div class="card">
 <style>
 .card {
-  padding: 20px;
+  padding: 20px 20px 20px 20px;
   color: #666666;
   background-color: #dee6ed;
+  /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: 0.3s;
   border-radius: 10px;
+
 }
 
+/* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+/* Add some padding inside the card container */
 .container {
   padding: 2px 16px;
 }
-
-/* Resume Section Styling */
-.resume-btn {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  font-family: 'Trebuchet MS', sans-serif;
-  font-weight: bold;
-}
-
-.pdf-container {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.pdf-iframe {
-  width: 100%;
-  height: 80vh;
-  min-height: 500px;
-  border: none;
-}
-
-/* Mobile adjustments: ensure the PDF viewer stays visible and fills the screen */
-@media screen and (max-width: 768px) {
-  .resume-btn {
-    display: block;
-    width: 80%;
-    margin: 15px auto;
-    padding: 14px;
-    font-size: 15px;
-  }
-  .pdf-iframe {
-    height: 65vh; /* Optimal height for mobile screens */
-  }
-}
 </style>
-</head>
+  <div class = "profileContainerImage">
+  <img src="images/CasualAvi2022.png" alt="CheesinCropCircle"
+      style="width:150px;height:150px;">
+     <div class="container">
+       <h3> <font face="Trebuchet MS"> brent-mac.com  </font> </h3>
+       </div>
+  </div> </div>
 
-<body style="font-weight: normal; margin: 30px;" class="body">
-
-<div class="card">
-  <div class="profileContainerImage">
-    <img src="images/CasualAvi2022.png" alt="CheesinCropCircle" style="width:150px;height:150px;">
-    <div class="container">
-      <h3><font face="Trebuchet MS">brent-mac.com</font></h3>
-    </div>
-  </div> 
-</div>
-
-<br>
+</br>
 <nav align="center">
   <font face="Trebuchet MS">
-    <a href="/index">About Me</a> &emsp;|&emsp;
-    <a href="/photos">Photography</a>
-  </font>
+<a href="/index">About Me</a> &emsp;|&emsp;
+<!-- <a href="/data">Do more with Data</a> &emsp;|&emsp;   -->
+<a href="/photos">Photography</a>
+    </font>
 </nav>
 <hr size="2" noshade>
+<body style= "font-weight: normal; margin: 30px;" class="body">
+<div> <!-- align ="center"> -->
+<font face="Trebuchet MS">
+<h1 style="color:#FFFFFF; font-weight: normal;">Brent Mac</h1>
 
-<div>
-  <font face="Trebuchet MS">
-    <h1 style="color:#FFFFFF; font-weight: normal;">Brent Mac</h1>
-    <p style="color:#FFFFFF;">Welcome to my website! Nothing fancy here. I wanted to get started with basic web design - figured a personal website would be a good way to start. Feel free to look around and connect!</p>
-    <br>
-  </font>
+  <p style="color:#FFFFFF;"> Welcome to my website! Nothing fancy here. I wanted to get started with basic web design - figured a personal website would be a good way to start. Feel free to look around and connect!</p>
+</br>
+</font>
 </div>
 
-<!-- Button for opening/downloading -->
-<div style="text-align: center; margin: 20px 0;">
-  <a class="resume-btn" href="media/Resume_BrentMac_August2026.pdf" target="_blank">
-    📄 View / Download Resume (PDF)
+  <!-- <div align="center"> -->
+<!-- Mobile-friendly fallback button -->
+<div style="text-align: center; margin-bottom: 20px;">
+  <a href="media/Resume_BrentMac_August2026.pdf" target="_blank" style="padding: 10px 20px; background-color: #333; color: #fff; text-decoration: none; border-radius: 5px; font-family: 'Trebuchet MS', sans-serif;">
+    📄 Open Resume Full Screen
   </a>
 </div>
 
-<!-- Embedded PDF (Visible on BOTH Desktop & Mobile) -->
-<div class="pdf-container" align="center">
-  <iframe class="pdf-iframe" src="media/Resume_BrentMac_August2026.pdf">
+<!-- Responsive Desktop Viewer -->
+<div align="center">
+  <iframe src="media/Resume_BrentMac_August2026.pdf" style="width: 90%; height="500px" border: none;">
       <p>Your browser does not support PDFs. <a href="media/Resume_BrentMac_August2026.pdf">Download the resume here</a>.</p>
   </iframe>
 </div>
-
-<br><br>
-
+         <!-- 
+        <embed src="/media/Resume.pdf" width="800" height="500" type='application/pdf'> </iframe>
+       <iframe src="/media/Resume.pdf" width="70%" height="500px"> </iframe> 
+        -->
+  </div>
+<br>
+  <br>
 <div class="footer-left">
-  <img src="images/BMacFooterLogo.png" alt="BMac Logo GW" style="width:50px;height:50px;">
-</div>
+<img src="images/BMacFooterLogo.png" alt="BMac Logo GW" style="width:50px;height:50px;">
+    </div>
+  </body>
 
 <footer class="footer-social-icons">
-  <ul class="social-icons">
-    <li><a href="https://twitter.com/_brent_mac?lang=en" class="social-icon" target="_blank"><i class="fa fa-twitter"></i></a></li>
-    <li><a href="https://www.youtube.com/" class="social-icon"><i class="fa fa-youtube"></i></a></li>
-    <li><a href="https://www.linkedin.com/in/brentmac/" class="social-icon"><i class="fa fa-linkedin"></i></a></li>
-    <li><a href="" class="social-icon"><i class="fa fa-google-plus"></i></a></li>
-  </ul>
+      <ul class="social-icons">
+          <li><a href="https://twitter.com/_brent_mac?lang=en" class="social-icon" target="_blank"> <i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.youtube.com/" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/brentmac/" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+      </ul>
+
 </footer>
 
-</body>
+
 </html>
+<!-- * -->
