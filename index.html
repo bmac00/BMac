@@ -95,31 +95,43 @@
 
     /* Keep the footer below the full-height resume on desktop. */
     .site-footer.footer-social-icons {
-      position: static !important;
+      position: relative !important;
       clear: both;
-      display: grid;
-      grid-template-columns: 1fr auto 1fr;
+      display: flex !important;
       align-items: center;
+      justify-content: center !important;
       width: 100%;
+      min-height: 90px;
       margin: 32px 0 0;
       padding: 0;
+      float: none !important;
+      text-align: center !important;
     }
 
     .site-footer .footer-left {
-      position: static !important;
+      position: absolute !important;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
       float: none !important;
-      grid-column: 1;
-      justify-self: start;
       margin: 0;
     }
 
     .site-footer .social-icons {
       position: static !important;
+      display: flex !important;
+      align-items: center;
+      justify-content: center !important;
       float: none !important;
-      grid-column: 2;
-      justify-self: center;
       margin: 0;
       padding: 0;
+      width: auto !important;
+      transform: none !important;
+      text-align: center !important;
+    }
+
+    .site-footer .social-icons li {
+      float: none !important;
     }
 
     @media (max-width: 600px) {
@@ -233,7 +245,7 @@
       </li>
     </ul>
   </footer>
-<!-- Start JS for device responsive Resume viewing (desktop and mobile) -->
+
   <script type="module">
     import * as pdfjsLib from
       "https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/build/pdf.min.mjs";
